@@ -11,6 +11,8 @@ import Login from "./Pages/Login/Login/Login";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Register from "./Pages/Login/Register/Register";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
+import CheackOut from "./Pages/CheackOut/CheackOut";
+import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
 
 function App() {
   return (
@@ -24,6 +26,14 @@ function App() {
         <Route path="/aboutme" element={<AboutMe />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
+        <Route
+          path="/cheackout"
+          element={
+            <RequireAuth>
+              <CheackOut />
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
