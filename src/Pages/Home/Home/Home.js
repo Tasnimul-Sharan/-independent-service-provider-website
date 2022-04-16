@@ -5,16 +5,16 @@ import tutor from "../../../images/tutor.jpg";
 
 const Home = () => {
   return (
-    <section className="container">
+    <section className="container ">
       <div>
-        <img className="img-fluid w-50" src={tutor} alt="" />
+        <img className="img-fluid w-50 mb-5" src={tutor} alt="" />
       </div>
-      <div>
-        <h1>I am also Expert in web development too</h1>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, quia nam
-        at, voluptatibus, obcaecati aperiam et harum maxime aliquam ducimus
-        voluptatum inventore dicta nobis cum rem vitae eum dignissimos.
-        Corporis.
+      <div className="">
+        <h1>Learn Web Development with me</h1>
+        <p>
+          Web development which i always dream about , now i have achieved it
+          .You can learn html, css, bootstrap, javaScript, react etc.{" "}
+        </p>
       </div>
       <div>
         <img className="img-fluid w-50" src={web} alt="" />
