@@ -2,8 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <h5>foto</h5>
+    <div className="bg-dark text-white fixed-bottom">
+      <p>
+        <b>Copyright © {new Date().getFullYear()}</b>
+      </p>
     </div>
   );
 };

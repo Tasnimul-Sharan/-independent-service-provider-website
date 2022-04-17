@@ -1,15 +1,29 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 import auth from "../../../firebase.init";
 import Loading from "../../Shared/Loading/Loading";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [signInWithEmailAndPassword, user, loading, error] =
+  const [error, setError] = useState("");
+  const [signInWithEmailAndPassword, user, loading] =
     useSignInWithEmailAndPassword(auth);
+
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+  const resetPassword = async () => {
+    await sendPasswordResetEmail(email);
+    toast("sent email");
+  };
+
   const navigate = useNavigate();
 
   let location = useLocation();
@@ -25,6 +39,9 @@ const Login = () => {
 
   const handleLogIn = (event) => {
     event.preventDefault();
+    if (email !== password) {
+      setError("Please enter valid email and password");
+    }
     signInWithEmailAndPassword(email, password);
   };
   return (
@@ -48,6 +65,7 @@ const Login = () => {
             placeholder="Password"
           />
         </Form.Group>
+        <p className="text-danger">{error}</p>
         <Button variant="primary" type="submit">
           Login
         </Button>
@@ -58,6 +76,17 @@ const Login = () => {
           Please Register
         </Link>
       </p>
+      <p>
+        forget password?
+        <Button
+          onClick={resetPassword}
+          variant="link"
+          className="text-primary text-decoration-none"
+        >
+          Reset password
+        </Button>
+      </p>
+      <ToastContainer />
     </div>
   );
 };

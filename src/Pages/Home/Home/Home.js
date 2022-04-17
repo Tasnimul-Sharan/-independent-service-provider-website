@@ -1,6 +1,8 @@
 import React from "react";
 import web from "../../../images/web.jpg";
 import tutor from "../../../images/tutor.jpg";
+// import Service from "../Service/Service";
+import Services from "../Services/Services";
 // import Footer from "../../Shared/Footer/Footer";
 
 const Home = () => {
@@ -9,6 +11,13 @@ const Home = () => {
       <div>
         <img className="img-fluid w-50 mb-5" src={tutor} alt="" />
       </div>
+      <div>
+        <h1>My Services</h1>
+        <Services />
+      </div>
+      {/* <div>
+        <Footer />
+      </div> */}
       <div className="">
         <h1>Learn Web Development with me</h1>
         <p>
@@ -19,9 +28,6 @@ const Home = () => {
       <div>
         <img className="img-fluid w-50" src={web} alt="" />
       </div>
-      {/* <div>
-        <Footer />
-      </div> */}
     </section>
   );
 };
