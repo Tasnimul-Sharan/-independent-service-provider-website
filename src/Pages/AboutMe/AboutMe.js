@@ -15,9 +15,9 @@ const AboutMe = () => {
           Authentication.Now my goal is to become a professonal full Stack Web
           Developer.For this i have to search the resources and make notes
           everyday and practice it more and more, And think about the learnning
-          part that how can apply it to in a project.I want to learn everything
-          what i have have to learn , i want to do everything, what i have to
-          do.Now web development is my part of life. Thank you.{" "}
+          part that how can apply it to in a project.I will give plenty of time,
+          I will give my best to reach my goal.Now web development is my part of
+          life. Thank you.{" "}
         </h5>
       </div>
     </section>
