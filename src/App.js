@@ -13,6 +13,7 @@ import Register from "./Pages/Login/Register/Register";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
 import CheackOut from "./Pages/CheackOut/CheackOut";
 import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
+import Services from "./Pages/Home/Services/Services";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
-        {/* <Route path="/services" element={<Services />}></Route> */}
+        <Route path="/services" element={<Services />}></Route>
         <Route path="/blogs" element={<Blogs />}></Route>
         <Route path="/aboutme" element={<AboutMe />}></Route>
         <Route path="/login" element={<Login />}></Route>
@@ -36,7 +37,29 @@ function App() {
         ></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
+
+      {/* {
+    "id": "625afbdf73a008229e567ad4",
+    "price": "$50",
+    "picture": "https://img.freepik.com/free-vector/realistic-math-chalkboard-background_23-2148163817.jpg?size=626&ext=jpg&uid=R67494978&ga=GA1.2.986424658.1648222770",
+    "name": "Math",
+    "description": "Voluptate velit ut eu non labore deserunt sunt. Fugiat nostrud dolor qui ullamco aute Lorem do magna irure nulla..\r\n"
+  },
+  {
+    "id": "625afbdf73a008229e567ad4",
+    "price": "$50",
+    "picture": "https://as2.ftcdn.net/v2/jpg/02/06/49/53/1000_F_206495393_52Ydcd64v5sGYRXuqrAO6s3iAf4k8ld4.jpg",
+    "name": "Math",
+    "description": "Voluptate velit ut eu non labore deserunt sunt. Fugiat nostrud dolor qui ullamco aute Lorem do magna irure nulla..\r\n"
+  },
+  {
+    "id": "625afbdf73a008229e567ad4",
+    "price": "$50",
+    "picture": "https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?size=626&ext=jpg&uid=R67494978&ga=GA1.2.986424658.1648222770",
+    "name": "Web Development",
+    "description": "Voluptate velit ut eu non labore deserunt sunt. Fugiat nostrud dolor qui ullamco aute Lorem do magna irure nulla..\r\n"
+  } */}
     </div>
   );
 }
