@@ -37,7 +37,6 @@ function App() {
         ></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-
       {/* {
     "id": "625afbdf73a008229e567ad4",
     "price": "$50",
@@ -59,6 +58,9 @@ function App() {
     "name": "Web Development",
     "description": "Voluptate velit ut eu non labore deserunt sunt. Fugiat nostrud dolor qui ullamco aute Lorem do magna irure nulla..\r\n"
   } */}
+      {/* https://img.freepik.com/free-vector/physics-formulas-drawn-by-hand-black-chalkboard-background_101002-133.jpg?w=740 */}
+      {/* {/* https://t3.ftcdn.net/jpg/01/64/92/16/240_F_164921619_vgjzmQhbjb8uSA4x5jkqi5X9WY404kjq.jpg */}{" "}
+      {/* https://img.freepik.com/free-vector/realistic-math-chalkboard-background_23-2148163817.jpg?size=626&ext=jpg&uid=R67494978&ga=GA1.2.986424658.1648222770 */}
     </div>
   );
 }

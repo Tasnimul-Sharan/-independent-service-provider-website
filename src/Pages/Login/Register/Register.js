@@ -3,26 +3,22 @@ import { Button, Form } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import {
   useCreateUserWithEmailAndPassword,
-  // useSendEmailVerification,
+  useSendEmailVerification,
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
-// import { updateProfile } from "firebase/auth";
 import Loading from "../../Shared/Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { async } from "@firebase/util";
-import { sendEmailVerification } from "firebase/auth";
-// import { async } from "@firebase/util";
 
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
-  // const [sendEmailVerification, sending, error2] =
-  //   useSendEmailVerification(auth);
+  const [sendEmailVerification, sending, error2] =
+    useSendEmailVerification(auth);
 
   const [name, setName] = useState("");
   const [createUserWithEmailAndPassword, user, loading] =
@@ -33,9 +29,14 @@ const Register = () => {
     navigate("/home");
   }
 
-  if (loading || updating) {
+  if (loading || updating || sending) {
     return <Loading />;
   }
+
+  const verifyEmail = async () => {
+    await sendEmailVerification();
+    toast("sent email");
+  };
 
   const handleRegister = async (event) => {
     event.preventDefault();
@@ -45,26 +46,21 @@ const Register = () => {
     }
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
+    verifyEmail();
   };
 
-  // const verifyEmail = async () => {
-  //   if (handleRegister) {
-  //     await sendEmailVerification();
-  //   }
+  // const verifyEmail = () => {
+  //   sendEmailVerification(auth.currentUser).then(() => {
+  //     // console.log('Email Verification Sent');
+  //     toast("sent email");
+  //   });
   // };
-  const verifyEmail = () => {
-    sendEmailVerification(auth.currentUser).then(() => {
-      // console.log('Email Verification Sent');
-      toast("sent email");
-    });
-  };
 
   return (
     <div>
       <h1>Register</h1>
       <Form className="container w-25 text-start" onSubmit={handleRegister}>
         <Form.Group className="mb-3">
-          {/* <Form.Label>Enter Name</Form.Label> */}
           <Form.Control
             onChange={(e) => setName(e.target.value)}
             type="text"
@@ -73,7 +69,6 @@ const Register = () => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          {/* <Form.Label>Email address</Form.Label> */}
           <Form.Control
             onChange={(e) => setEmail(e.target.value)}
             type="email"
@@ -82,7 +77,6 @@ const Register = () => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          {/* <Form.Label>Password</Form.Label> */}
           <Form.Control
             onChange={(e) => setPassword(e.target.value)}
             type="password"
@@ -91,9 +85,6 @@ const Register = () => {
           />
           <p className="text-danger">{error}</p>
         </Form.Group>
-        {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group> */}
         <Button onClick={verifyEmail} variant="outline-dark" type="submit">
           Submit
         </Button>

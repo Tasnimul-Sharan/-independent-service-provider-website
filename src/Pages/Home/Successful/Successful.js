@@ -11,7 +11,7 @@ const Successful = () => {
   return (
     <div className="container">
       <h1>My Successful Students</h1>
-      <div className="row">
+      <div className="row ms-2">
         {students.map((student) => (
           <Success key={student.id} student={student}></Success>
         ))}
