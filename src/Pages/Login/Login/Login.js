@@ -46,10 +46,10 @@ const Login = () => {
   };
   return (
     <div>
-      <h1>login</h1>
-      <Form onSubmit={handleLogIn} className="container w-50 text-start">
+      <h1>Login</h1>
+      <Form onSubmit={handleLogIn} className="container w-25 text-start">
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+          {/* <Form.Label>Email address</Form.Label> */}
           <Form.Control
             onChange={(e) => setEmail(e.target.value)}
             type="email"
@@ -58,7 +58,7 @@ const Login = () => {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
+          {/* <Form.Label>Password</Form.Label> */}
           <Form.Control
             onChange={(e) => setPassword(e.target.value)}
             type="password"
@@ -66,12 +66,12 @@ const Login = () => {
           />
         </Form.Group>
         <p className="text-danger">{error}</p>
-        <Button variant="primary" type="submit">
+        <Button variant="outline-dark" type="submit">
           Login
         </Button>
       </Form>
       <p>
-        new to here?{" "}
+        New to Rapid learner?{" "}
         <Link to="/register" className="text-primary text-decoration-none">
           Please Register
         </Link>
@@ -81,7 +81,7 @@ const Login = () => {
         <Button
           onClick={resetPassword}
           variant="link"
-          className="text-primary text-decoration-none"
+          className="text-danger text-decoration-none"
         >
           Reset password
         </Button>

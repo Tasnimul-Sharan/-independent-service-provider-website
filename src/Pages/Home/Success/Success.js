@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 const Success = ({ student }) => {
   const { name, picture, age } = student;
@@ -10,7 +10,6 @@ const Success = ({ student }) => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>Age: {age}</Card.Text>
-          {/* <Button variant="primary">Go somewhere</Button> */}
         </Card.Body>
       </Card>
     </div>

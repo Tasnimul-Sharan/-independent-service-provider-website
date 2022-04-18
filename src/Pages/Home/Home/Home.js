@@ -17,9 +17,15 @@ const Home = () => {
   return (
     <section>
       <div className="banner mb-5">
-        <div className="">
-          <h1>Learn Physics Chemistry and Math course the easy way!</h1>
-          <h5>I am online tutor. </h5>
+        <div className=" pt-5">
+          <div className="pt-5">
+            <h1>Learn Physics Chemistry and Math subjects very easily!</h1>
+            <h5>
+              {" "}
+              I have been teaching physics, chemistry and math for three years,
+              and i promiss you that you will Learn Effectively this subjects.{" "}
+            </h5>
+          </div>
         </div>
       </div>
       {/* <Carousel>
