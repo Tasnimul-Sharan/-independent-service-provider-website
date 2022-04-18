@@ -23,10 +23,9 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand href="/">Rapid Learner</Navbar.Brand>
-          {/* <Navbar.Brand href="/services">services</Navbar.Brand> */}
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="ms-auto">
               <Nav.Link as={Link} to="/services">
                 Services
               </Nav.Link>

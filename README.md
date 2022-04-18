@@ -14,7 +14,7 @@
 
 * In the navbar here you see a blogs and about me pages.In the blog page here are two questions and answers.And in the about me page there i have added my name, picture and some articles about my goal and hardwork related.
 
-## And a list of technologies (frameworks, libraries) used in my project :
+## A list of technologies (frameworks, libraries) used in my project :
 
 1. Create react app
 2. React router dom

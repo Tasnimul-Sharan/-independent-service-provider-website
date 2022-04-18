@@ -37,7 +37,6 @@ function App() {
         ></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-      {/* <Footer /> */}
 
       {/* {
     "id": "625afbdf73a008229e567ad4",

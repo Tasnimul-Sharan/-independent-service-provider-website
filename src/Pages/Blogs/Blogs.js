@@ -2,6 +2,7 @@ import React from "react";
 
 const Blogs = () => {
   return (
+    /*The blogs page where the questions and answers*/
     <section>
       <div>
         <h5>
@@ -20,7 +21,9 @@ const Blogs = () => {
           <br />
           <span>
             The other options in authentication those are given bellow :
-            1.cards, 2.retina scans, 3.voice recognition, 4.fingerprints.
+            1.Parse, 2.Back4app, 3.Kinvey, 4.Backendless, 5Kuzzle , 6.Pubnub,
+            7.Kumulos, 8.Game, Sparks 9.Hoodie, 10.Appwrite, 11.Deployd,
+            12.NHost, 13.Amplify JS, 14.Heroku,
           </span>
         </p>
       </div>
@@ -33,7 +36,7 @@ const Blogs = () => {
           given bellow : <br />
           1. Cloud Firestore 2. Cloud Functions 3. Google Analytics 4.Hosting
           5.Cloud Storage 6.Predictions 7. Remote Config 8.Dynamic Links 9.Cloud
-          Messaging .
+          Messaging.
         </p>
       </div>
     </section>

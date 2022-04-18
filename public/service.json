@@ -4,21 +4,21 @@
       "price": "$50",
       "picture": "https://img.freepik.com/free-vector/physics-formulas-drawn-by-hand-black-chalkboard-background_101002-133.jpg?w=740",
       "name": "Physics",
-      "description": "Learn physics very easily , i have been teaching physics for three years, and i promiss that you will love this subject.\r\n"
+      "description": "Physics is the branch of science that deals with the structure of matter and how the fundamental constituents of the universe interact.It studies objects ranging from the very small using quantum mechanics to the entire universe using general relativity.\r\n"
     },
     {
       "id": "625afbdf26a9190917cc6b64",
       "price": "$50",
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtwUs6opMW_2SOlZXu0_C_5noEIIRWNIl7Q&usqp=CAU",
       "name": "Chemistry",
-      "description": "Learn Chemistry supper easily, all the concept you can understand very easily .\r\n"
+      "description": "Chemistry is the scientific study of the properties and behavior of matter. It is a natural science that covers the elements that make up matter to the compounds composed of atoms, molecules and ions their composition, structure, properties and behavior.\r\n"
     },
     {
       "id": "625afbdf73a008229e567ad4",
       "price": "$50",
       "picture": "https://img.freepik.com/free-vector/realistic-math-chalkboard-background_23-2148163817.jpg?size=626&ext=jpg&uid=R67494978&ga=GA1.2.986424658.1648222770",
       "name": "Math",
-      "description": "Voluptate velit ut eu non labore deserunt sunt. Fugiat nostrud dolor qui ullamco aute Lorem do magna irure nulla..\r\n"
+      "description": "Math is the structure of science, order, and relation that has evolved from elemental practices of counting, measuring, and describing the shapes of objects. It deals with logical calculation, and its development has involved an increasing degree of idealization. .\r\n"
     }
     
   ]

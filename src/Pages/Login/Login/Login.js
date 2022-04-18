@@ -33,7 +33,7 @@ const Login = () => {
     navigate(from, { replace: true });
   }
 
-  if (loading) {
+  if (loading || sending) {
     return <Loading />;
   }
 
@@ -49,7 +49,6 @@ const Login = () => {
       <h1>Login</h1>
       <Form onSubmit={handleLogIn} className="container w-25 text-start">
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          {/* <Form.Label>Email address</Form.Label> */}
           <Form.Control
             onChange={(e) => setEmail(e.target.value)}
             type="email"
@@ -58,7 +57,6 @@ const Login = () => {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          {/* <Form.Label>Password</Form.Label> */}
           <Form.Control
             onChange={(e) => setPassword(e.target.value)}
             type="password"

@@ -10,6 +10,8 @@ const Services = () => {
   }, []);
 
   return (
+    // services section
+
     <div className="container">
       <h1>My Services</h1>
       <div className="row">
