@@ -6,9 +6,11 @@ import {
 import auth from "../../../firebase.init";
 import google from "../../../images/google.png";
 import github from "../../../images/github.png";
+
 const SocialLogin = () => {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+
   return (
     <section>
       <div>

@@ -16,9 +16,8 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [updateProfile, updating, updateError] = useUpdateProfile(auth);
-  const [sendEmailVerification, sending, error2] =
-    useSendEmailVerification(auth);
+  const [updateProfile, updating] = useUpdateProfile(auth);
+  const [sendEmailVerification, sending] = useSendEmailVerification(auth);
 
   const [name, setName] = useState("");
   const [createUserWithEmailAndPassword, user, loading] =
@@ -33,11 +32,6 @@ const Register = () => {
     return <Loading />;
   }
 
-  const verifyEmail = async () => {
-    await sendEmailVerification();
-    toast("sent email");
-  };
-
   const handleRegister = async (event) => {
     event.preventDefault();
     if (password.length < 6) {
@@ -49,12 +43,10 @@ const Register = () => {
     verifyEmail();
   };
 
-  // const verifyEmail = () => {
-  //   sendEmailVerification(auth.currentUser).then(() => {
-  //     // console.log('Email Verification Sent');
-  //     toast("sent email");
-  //   });
-  // };
+  const verifyEmail = async () => {
+    await sendEmailVerification();
+    toast("sent email");
+  };
 
   return (
     <div>
@@ -85,7 +77,12 @@ const Register = () => {
           />
           <p className="text-danger">{error}</p>
         </Form.Group>
-        <Button onClick={verifyEmail} variant="outline-dark" type="submit">
+        <Button
+          className="w-100 mb-2"
+          onClick={verifyEmail}
+          variant="outline-dark"
+          type="submit"
+        >
           Submit
         </Button>
       </Form>

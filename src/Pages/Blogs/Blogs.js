@@ -21,7 +21,7 @@ const Blogs = () => {
           <br />
           <span>
             The other options in authentication those are given bellow :
-            1.Parse, 2.Back4app, 3.Kinvey, 4.Backendless, 5Kuzzle , 6.Pubnub,
+            1.Parse, 2.Back4app, 3.Kinvey, 4.Backendless, 5.Kuzzle, 6.Pubnub,
             7.Kumulos, 8.Game, Sparks 9.Hoodie, 10.Appwrite, 11.Deployd,
             12.NHost, 13.Amplify JS, 14.Heroku,
           </span>

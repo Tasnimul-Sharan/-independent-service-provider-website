@@ -7,8 +7,6 @@ import Successful from "../Successful/Successful";
 const Home = () => {
   return (
     <section className="container-fluid">
-      {/* this is an banner section */}
-
       <div className="banner row mb-3">
         <div className=" pt-5 col-sm-12 col-md-12 col-lg-12">
           <div className="pt-5">

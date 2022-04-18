@@ -64,7 +64,7 @@ const Login = () => {
           />
         </Form.Group>
         <p className="text-danger">{error}</p>
-        <Button variant="outline-dark" type="submit">
+        <Button className="w-100 mb-2" variant="outline-dark" type="submit">
           Login
         </Button>
       </Form>

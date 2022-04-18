@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Service = ({ service }) => {
   const { price, picture, name, description } = service;
   return (
-    <div className="g-4 col-sm-8 col-md-8 col-lg-4 mb-3">
+    <div className="g-4 col-sm-8 col-md-8 col-lg-4 mb-5">
       <Card style={{ width: "18rem" }}>
         <Card.Img variant="top" src={picture} />
         <Card.Body>
