@@ -12,6 +12,8 @@
 
 * In the login form ,if you don't have any account here has a option near the button that New to Rapid learner? Please Register when you click on this link it will take you the register form. In the Register form you can register with name, email and password . In the register form here you can see other options Sign in with google and Sign in with github.And near the button you can see a option Already have account? Please Login when you click on link it will take you the login form.In the login form you need only two things email and password .And if you forget your password here you see a button reset password click on this button and reset your password.And make sure your email and password is correct otherWise it will show an error. In the register from your password must be in six character or longer otherwise it will show you an error.
 
+* After login, when you enroll it will take you to the checkout page.Make the full website responsive for mobile devices and large devices.
+
 * In the navbar here you see a blogs and about me pages.In the blog page here are two questions and answers.And in the about me page there i have added my name, picture and some articles about my goal and hardwork related.
 
 ## A list of technologies (frameworks, libraries) used in my project :
