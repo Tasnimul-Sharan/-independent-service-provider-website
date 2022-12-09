@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../../firebase.init";
-import header from "../../../images/header.png";
+import header from "../../../images/header1.png";
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -29,9 +29,9 @@ const Header = () => {
               src={header}
               width="55"
               height="55"
-              className="d-inline-block"
+              className="img-fluid"
             />{" "}
-            <span className="d-inline-block">Rapid Learner</span>
+            <span>Rapid Learner</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

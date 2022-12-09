@@ -10,7 +10,7 @@
 
 * In the service section here you can see only three services, all the services have a picture, name, price, description and a button . if anyone click on the button it will take him or her at the cheackout page .This cheackout page is a private or protected page so it will show a login option.
 
-* In the login form ,if you don't have any account here has a option near the button that New to Rapid learner? Please Register when you click on this link it will take you the register form. In the Register form you can register with name, email and password . In the register form here you can see other options Sign in with google and Sign in with github.And near the button you can see a option Already have account? Please Login when you click on link it will take you the login form.In the login form you need only two things email and password .And if you forget your password here you see a button reset password click on this button and reset your password.And make sure your email and password is correct otherWise it will show an error. In the register from your password must be in six character or longer otherwise it will show you an error.
+* Implemented Firebase Authentication System, Using a Private route.
 
 * After login, when you enroll it will take you to the checkout page.Make the full website responsive for mobile devices and large devices.
 
